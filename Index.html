@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <p>Calculator</p>
+
+  <p>
+    <button onclick="num1()">1</button>
+    <button onclick="num2()">2</button>
+    <button onclick="num3()">3</button>
+    <button onclick="plus()">+</button>
+  </p>
+  <p>
+    <button onclick="num4()">4</button>
+    <button onclick="num5()">5</button>
+    <button onclick="num6()">6</button>
+    <button onclick="minus()">-</button>
+  </p>
+  <p>
+    <button onclick="num7()">7</button>
+    <button onclick="num8()">8</button>
+    <button onclick="num9()">9</button>
+    <button onclick="multiply()">*</button>
+  </p>
+  <p>
+    <button onclick="num0()">0</button>
+    <button onclick="dott()">.</button>
+    <button onclick="result()">=</button>
+    <button onclick="divide()">/</button>
+  </p>
+  <button onclick="reset()">Clear</button>
+
+<script>
+
+  let x='';
+  
+  function num1(){
+    x+=1
+  }
+  function num2(){
+    x+=2
+  }
+  function num3(){
+    x+=3
+  }
+  function plus(){
+    x+=` + `
+  }
+  function num4(){
+    x+=4
+  }
+  function num5(){
+    x+=5
+  }
+  function num6(){
+    x+=6
+  }
+  function minus(){
+    x+=' - '
+  }
+  function num7(){
+    x+=7
+  }
+  function num8(){
+    x+=8
+  }
+  function num9(){
+    x+=9
+  }
+  function multiply(){
+    x+=' * '
+  }
+  function num0(){
+    x+=0
+  }
+  function dott(){
+    x+='.'
+  }
+  function result(){
+    console.log(x = eval (x))
+  }
+  function divide(){
+    x+=' / '
+  }
+
+  function reset(){
+    x=''
+    console.log('cleared')
+  }
+
+</script>
+</body>
+</html>
